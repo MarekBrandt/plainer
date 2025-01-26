@@ -1,7 +1,7 @@
 from flask import Flask
 
 from app.routes.calendar_routes import calendar_bp
-from app.routes.tasks import tasks_bp
+from app.routes.tasks_routes import tasks_bp
 
 def create_app():
     app = Flask(__name__)

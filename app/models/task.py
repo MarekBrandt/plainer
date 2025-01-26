@@ -1,10 +1,11 @@
-class Task:
-    def __init__(self, id, name):
-        self.id = id
-        self.name = name
+from dataclasses import dataclass
 
-    def to_dict(self):
-        return {
-            "id": self.id,
-            "name": self.name,
-        }
+
+@dataclass
+class Task:
+    id: int
+    name: str
+
+@dataclass
+class TaskInput:
+    name: str
