@@ -1,10 +1,8 @@
-from flask import jsonify
-from flask.sansio.blueprints import Blueprint
+from flask import jsonify, Blueprint
 
 from app.services.task_service import get_all_tasks
 
 tasks_bp = Blueprint('tasks', __name__)
-
 
 @tasks_bp.route('/tasks', methods=['GET'])
 def get_tasks():
